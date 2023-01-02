@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:TradeSuivis.ViewModels"
+             x:DataType="viewModels:CompanyListPageViewModel"
+             x:Class="TradeSuivis.Views.CompanyListPage"
+             Title="Company List">
+    <VerticalStackLayout Margin="10">
+        <Label Text="Company List" FontSize="28" />
+        <Button Text="Add Company" Command="{Binding AddUpdateCompanyCommand}" HorizontalOptions="EndAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>
